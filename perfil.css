@@ -35,6 +35,7 @@ main p{
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid black;
+    justify-content: space-between;
 }
 .profile{
     margin: none;
@@ -50,16 +51,15 @@ main p{
 #top .content .top .right{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 #top .content .bottom{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 #top .content .bottom p{
     color: var(--color3);
-    margin: 10px;
     padding: 20px;
 }
 #top .content .bottom #publicaciones{
@@ -79,8 +79,7 @@ main p{
     background-color: var(--color3);
     border-radius: 10px;
     border: none;
-    margin-left: 500px;
-    margin-top: 30px;
+    margin: 20px;
     padding-bottom: 30px;
 }
 #triplePunto:hover{
@@ -99,10 +98,6 @@ main p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 670px;
-}
-.name{
-    width: 150px;
 }
 .buttons .enviar{
     color: var(--color4);
@@ -134,7 +129,6 @@ main p{
     background-color: var(--color);
     border-radius: 10px;
     border: none;
-    margin-left: 30px;
     padding-bottom: 30px;
 }
 .buttons .anadir:active{
@@ -174,8 +168,8 @@ main #bottom .right{
     grid-gap: 10px;
 }
 .photos img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 .textContent{
     display: flex;
@@ -194,7 +188,7 @@ main #bottom .right{
 }
 h1{
     color: var(--color4);
-    margin: 20px;
+    margin-left: 10px;
 }
 .caracteristica >*{
     margin-left: 20px;
@@ -214,6 +208,9 @@ h1{
 .publications >*{
     width: 100%;
 }
+.details h1{
+     margin: 20px
+}
 .filter{
     color: var(--color4);
     font-size: 20px;
@@ -222,7 +219,6 @@ h1{
     background-color: var(--color3);
     border-radius: 10px;
     border: none;
-    margin-left: 30px;
 }
 .filter:active{
     background-color: var(--color3Active);
