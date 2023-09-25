@@ -6,6 +6,7 @@ body{
     --color4: white;
     --colorActive: rgb(2, 122, 221);
     --color3Active: rgb(77, 77, 77);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 main{
     padding: 10px;
@@ -89,14 +90,13 @@ main p{
     background-color: var(--color3Active);
 }
 #top .background{
-    background-image: url("https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg");
+    background-image: url("https://elhistoriadores.files.wordpress.com/2014/11/ac53f-antiates.jpg");
     background-size: 100% 100%;
     margin: 20px;
-    height: 200px;
+    height: 250px;
 }
 .buttons{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .buttons .enviar{
@@ -106,8 +106,8 @@ main p{
     width: 100px;
     background-color: var(--color3);
     border-radius: 10px;
+    margin: inherit;
     border: none;
-    margin-left: 30px;
     padding-bottom: 30px;
 }
 .buttons .enviar:active{
@@ -122,14 +122,16 @@ main p{
     filter: invert(100%);
 }
 .buttons .anadir{
+    padding: 5px;
     color: var(--color4);
     font-size: 20px;
     height: 30px;
-    width: 100px;
+    width: auto;
     background-color: var(--color);
     border-radius: 10px;
     border: none;
     padding-bottom: 30px;
+    display: flex;
 }
 .buttons .anadir:active{
     background-color: var(--colorActive);
@@ -162,6 +164,7 @@ main #bottom .right{
     flex-direction: column;
 }
 .photos{
+    background-color: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -186,7 +189,7 @@ main #bottom .right{
     cursor: pointer;
     color: var(--colorActive);
 }
-h1{
+h2{
     color: var(--color4);
     margin-left: 10px;
 }
@@ -209,7 +212,8 @@ h1{
     width: 100%;
 }
 .details h1{
-     margin: 20px
+    color: var(--color4);
+    margin: 20px
 }
 .filter{
     color: var(--color4);
@@ -240,6 +244,7 @@ h1{
 }
 .pictures{
     height: 85%;
+    padding: 10px;
 }
 footer{
     display: flex;

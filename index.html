@@ -13,12 +13,12 @@
             <div class="content">
                 <div class="top">
                     <div class="left">
-                        <img class="profile" width="100px" height="100px" src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="perfil">
-                        <p class="name">Lorem Ipsum</p>
+                        <img class="profile" width="100px" height="100px" src="https://i.pinimg.com/originals/69/fa/c1/69fac1d984b6fef7c7d3bc2161b5446b.jpg" alt="perfil">
+                        <p class="name">Numa Pompilio</p>
                     </div>
                     <div class="right">
                         <div class="buttons">
-                            <button class="anadir"><img src="https://cdn-icons-png.flaticon.com/512/1144/1144797.png" alt=""> Añadir</button>
+                            <button class="anadir" id="anadir" onclick="anadirAmigo()"><img src="https://cdn-icons-png.flaticon.com/512/1144/1144797.png" alt=""> Añadir</button>
                             <button class="enviar" type="submit"><img src="https://cdn-icons-png.flaticon.com/512/87/87401.png" alt=""> Enviar Mensaje</button>
                         </div>
                     </div>
@@ -39,34 +39,37 @@
                 <div class="details">
                     <h1>Detalles:</h1>
                     <div class="caracteristica">
-                        <p>🏠Lorem ipsum dolor sit</p>
+                        <p>🏠Vive en Cures</p>
                     </div>
                     <div class="caracteristica">
-                        <p>💼Lorem ipsum dolor sit</p>
+                        <p>💼Creó el calendario de 12 meses</p>
                     </div>
                     <div class="caracteristica">
-                        <img width="30px" height="30px" style="filter: invert(100%);" src="https://cdn-icons-png.flaticon.com/512/2794/2794702.png" alt=""><p class="ubicacion">Lorem ipsum dolor sit</p>
+                        <img width="30px" height="30px" style="filter: invert(100%);" src="https://cdn-icons-png.flaticon.com/512/2794/2794702.png" alt=""><p class="ubicacion">Nació en Cures</p>
                     </div>
                     <div class="caracteristica">
-                        <p>❤️Lorem ipsum dolor sit</p>
+                        <p>❤️Casado con Tacia</p>
+                    </div>
+                    <div class="caracteristica">
+                        <p>💼Fue el segundo rey de Roma</p>
                     </div>
                 </div>
             </div>
             <div class="right">
                 <div class="publications">
-                    <div class="title"><h1>Publicaciones:</h1><button class="filter"><img width="20px" style="filter: invert(100%);" src="https://cdn-icons-png.flaticon.com/512/6526/6526846.png" alt=""> Filtros</button></div>
+                    <div class="title"><h2>Publicaciones:</h2><button class="filter"><img width="20px" style="filter: invert(100%);" src="https://cdn-icons-png.flaticon.com/512/6526/6526846.png" alt=""> Filtros</button></div>
                     <div class="pictures">
                         <div class="textContent">
-                            <p class="fotos">Fotos</p>
+                            <p class="fotos">Fotos:</p>
                             <p class="verFotos">Ver todas las fotos</p>
                         </div>
                         <div class="photos">
-                            <img src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="">
-                            <img src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="">
-                            <img src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="">
-                            <img src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="">
-                            <img src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="">
-                            <img src="https://egg-education-images.s3.amazonaws.com/thumbnail/64226eb79a4ac33261506d54.jpg" alt="">
+                            <img src="https://unhistoriador.com/wp-content/uploads/2022/06/augusto-250x250.jpg" alt="">
+                            <img src="https://i.postimg.cc/fW7S4WD2/2.png" alt="">
+                            <img src="https://e7r2euwepto.exactdn.com/wp-content/uploads/templo-de-vesta.jpg" alt="">
+                            <img src="https://i.pinimg.com/736x/dd/51/6c/dd516c94efac679f6a096c0670caf154--autun-france-pax-romana.jpg" alt="">
+                            <img src="https://elhistoriadores.files.wordpress.com/2014/11/ac53f-antiates.jpg" alt="">
+                            <img src="https://www.imperivm.org/wp-content/uploads/2019/06/0000000580-2.jpg" alt="">
                         </div>
                     </div>
                 </div>                
@@ -77,4 +80,17 @@
         <p>Derechos de autor © 2023 - Salvador Cañizalez</p>
     </footer>
 </body>
+<script>
+    var anadir = document.getElementById('anadir');
+    function anadirAmigo(){
+        if (anadir.innerHTML != '✓Añadido') {
+            anadir.innerHTML = '✓Añadido';
+            anadir.style.padding = "2px";
+        } else{
+            anadir.innerHTML = '<img src="https://cdn-icons-png.flaticon.com/512/1144/1144797.png" alt=""> Añadir'
+            anadir.style.padding = "5px";
+        }
+        
+    }
+</script>
 </html>
